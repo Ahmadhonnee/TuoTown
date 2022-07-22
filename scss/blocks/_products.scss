@@ -1,0 +1,155 @@
+.products {
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+
+            &>p {
+                margin-top: 30px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 21px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    @media only screen and (min-width:780) {
+        .products__menu >*{
+            font-size: 13px;
+        }
+    }
+
+    &__knife {
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 290px));
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            // grid-template-areas: "c1 c1 c2 c3"
+            //                      "c4 c5 c6 c7";
+            gap: 20px;
+            .card {
+                &__img{
+                    width: 100%;
+                    display: block;
+                    height: 412px;
+                    object-fit: contain;
+                    background: #272727;
+                    border-radius: 14px;
+                }
+                &__p {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+                }
+
+                &__price {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+                    opacity: 0.5;
+                }
+
+                &__new {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #FF3232;
+                }
+            }
+            .card1{
+                grid-column: 1/3;
+            }
+        }
+        .form__heading{
+            width: 100%;
+            font-family: 'Jura';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 27px;
+            line-height: 42px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .form{
+            position: relative;
+            font-family: 'Montserrat';
+            width: 276px;
+            height: 60px;
+            margin: 30px auto;
+            &__input{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #272727;
+                border: none;
+                border-radius: 6px;
+                font-family: inherit;
+                font-size: inherit;
+                padding: 7px;
+                &:focus~.form__label{
+                    top: -0.5rem;
+                    font-size: 0.8rem;
+                    left: 0.8rem;
+                    border: 1px solid white;
+                }
+            }
+            &__label{
+                position: absolute;
+                left: 26px;
+                top: 1.5rem;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;
+                cursor: text;
+                background: #272727;
+                border-radius: 5px;
+                padding: 2px 4px;
+                transition: top 200ms ease-in,
+                            left 200ms ease-in,
+                            font-size 200ms ease-in,
+                            border 200ms ease-in 200ms;
+            }
+        }
+    }
+}
+
+.bigcard{
+    position: relative;
+    .card__img{
+        object-fit: fill;
+    }
+    & > .card__content{
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
+}
+// @media only screen and (min-width:980px) {
+
+// }

@@ -1,0 +1,42 @@
+.header{
+    padding: 18px 0;
+    background: rgba(33, 33, 33, 0.8);
+    backdrop-filter: blur(11px);
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__left{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            a{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+        &__logo{
+            height: 35px;
+            width: 146px;
+            background: url(../img/logo.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &__right{
+            &>ul{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                list-style: none;
+                li{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
