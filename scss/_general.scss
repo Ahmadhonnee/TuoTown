@@ -13,10 +13,17 @@
 @media only screen and (max-width:780px) {
     .container{
         max-width: 780px !important;
-        padding: 0 20px !important;
+        padding: 0 40px !important;
         margin: 0 auto !important;
     }
 }
+// @media only screen and (max-width:480px) {
+//     .container{
+//         max-width: 425px !important;
+//         padding: 30px !important;
+//         margin: 0 auto !important;
+//     }
+// }
 .visually-hidden {
     position: absolute;
     width: 1px;

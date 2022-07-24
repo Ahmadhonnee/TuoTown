@@ -37,13 +37,19 @@
             gap: 20px;
             .card {
                 width: 100%;
+                padding: 10px 0;
+                &__img >img{
+                    width: 100%;
+                    height: 100%;
+                    // object-fit: fill;
+                }
                 &__img{
                     width: 100%;
                     display: block;
                     height: 412px;
-                    object-fit: contain;
                     background: #272727;
                     border-radius: 14px;
+                    padding: 70px 0;
                 }
                 &__p {
                     font-family: 'Montserrat';
@@ -143,12 +149,10 @@
 .bigcard{
     position: relative;
     width: 100%;
-    picture{
-        width: 100%;
-    }
     .card__img{
         width: 100%;
-        // object-fit: fill;
+        height: 100%;
+        padding: 0;
     }
     & > .card__content{
         position: absolute;
