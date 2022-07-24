@@ -372,6 +372,13 @@ template {
   margin: 0 auto !important;
 }
 
+@media only screen and (max-width: 780px) {
+  .container {
+    max-width: 780px !important;
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -450,6 +457,8 @@ body {
   background: url(../img/knifeimg.png) no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .hero__box {
   display: -webkit-box;
@@ -463,8 +472,8 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 10px;
-  width: 760px;
-  padding: 50px;
+  width: 50%;
+  padding: 2rem;
 }
 .hero__box__title {
   font-family: "Jura";
@@ -497,6 +506,21 @@ body {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 780px) {
+  .hero__box {
+    padding: 30px;
+  }
+  .hero__box > .hero__box__desc {
+    font-size: 15px;
+    white-space: normal;
+  }
+  .hero__box > .hero__box__title {
+    white-space: normal;
+  }
+  .hero__box > .hero__box__btn {
+    white-space: normal;
+  }
+}
 .products__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,11 +557,6 @@ body {
   line-height: 21px;
   color: #FFFFFF;
 }
-@media only screen and (min-width: 780) {
-  .products .products__menu > * {
-    font-size: 13px;
-  }
-}
 .products__knife__cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 290px));
@@ -546,6 +565,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+}
+.products__knife__cards .card {
+  width: 100%;
 }
 .products__knife__cards .card__img {
   width: 100%;
@@ -639,12 +661,20 @@ body {
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in, border 200ms ease-in 200ms;
 }
 
+@media only screen and (max-width: 780px) {
+  .products__menu * {
+    font-size: 13px !important;
+  }
+}
 .bigcard {
   position: relative;
+  width: 100%;
+}
+.bigcard picture {
+  width: 100%;
 }
 .bigcard .card__img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 100%;
 }
 .bigcard > .card__content {
   position: absolute;

@@ -158,7 +158,12 @@
             <div class="products__knife">
                 <div class="products__knife__cards">
                     <div class="card card1 bigcard">
-                        <img class="card__img" src="./img/bigcard.png" alt="bigcard">
+                        <picture class="card__img">
+                            <source 
+                                type="image/webp" srcset="
+                                ./img/bigcard.webp">
+                            <img src="./img/bigcard.png" alt="bigcard">
+                        </picture>
                         <div class="card__content">
                             <p class="card__p">Складной нож SQ01-B</p>
                             <span class="card__price">850 р.</span>
