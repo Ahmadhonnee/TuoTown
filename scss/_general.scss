@@ -9,6 +9,7 @@
     max-width: 1440px !important;
     padding: 0 80px !important;
     margin: 0 auto !important;
+    transition: all .2s ease-in;
 }
 @media only screen and (max-width:780px) {
     .container{
@@ -17,13 +18,13 @@
         margin: 0 auto !important;
     }
 }
-// @media only screen and (max-width:480px) {
-//     .container{
-//         max-width: 425px !important;
-//         padding: 30px !important;
-//         margin: 0 auto !important;
-//     }
-// }
+@media only screen and (max-width:430px) {
+    .container{
+        max-width: 375px !important;
+        padding: 15px !important;
+        margin: 0 auto !important;
+    }
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
